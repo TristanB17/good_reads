@@ -1,4 +1,5 @@
 <%= @book.title %>
+Average Rating: <%= @average_book_rating %>
 
 <% @book.reviews.each do |review| %>
   User: <%= review.user.name %> <br>
