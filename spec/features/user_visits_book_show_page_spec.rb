@@ -2,14 +2,14 @@ require 'rails_helper'
 
 describe "A user" do
   describe "visiting a company show page" do
-    it 'sees a list of reivews, with a body, rating, and user name'
+    it 'sees a list of reivews, with a body, rating, and user name' do 
       book = Book.create(title: "Deadpool: Not as Cool of an Antihero as Venom ")
       user = User.create(name: "Jackon Pollock")
       review_1 = Review.create(book_id: 1,
                          user_id: 1,
                          content: 'Hooplah',
                          rating: 2)
-      review_1 = company.jobs.create(book_id: 1,
+      review_2 = Review.create(book_id: 1,
                          user_id: 1,
                          content: 'Hooplah',
                          rating: 3)
