@@ -39,7 +39,8 @@ describe "A user" do
 
       visit book_path(book)
 
-      expect(page).to have_content()
+      expect(page).to have_content(highest_book_rating)
+      expect(page).to have_content(lowest_book_rating)
       expect(page).to have_content(book_average_rating)
     end
   end

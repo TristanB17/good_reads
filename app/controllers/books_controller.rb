@@ -7,5 +7,6 @@ class BooksController < ApplicationController
   def show
     @book = Book.find(params[:id])
     @average_book_rating = @book.average_rating
+    binding.pry
   end
 end
